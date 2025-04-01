@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Life</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, red, green, white); 
+            font-family: Arial, sans-serif;
+        }
+        header{
+            text-align: center;
+             
+        }
+       .lower,.first{
+        text-align: left;
+        font-size:large;
+
+        }
+        h1{
+            font-size: xx-large;
+            text-align: center;
+            color: #333;
+            text-decoration-line: underline;
+        }
+         h2, h3, h4 {
+            text-align: center;
+            color: #333;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 900px;
+            align-items: left;
+            margin: 20px 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .scroll-box {
+            width: 40%;
+            height: 300px;
+            overflow-y: auto;
+            padding: 15px;
+            background: rgb(93, 114, 98);
+            border: 2px solid #922828;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .slideshow {
+            width: 50%;
+            position: relative;
+            text-align: center;
+        }
+        .slideshow img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+        }
+        .slide {
+            display: none;
+            width: 100%;
+        }
+        .active {
+            display: block;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            max-width: 800px;
+            margin-top: 30px;
+        }
+        .gallery .item {
+            text-align: center;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery .item:hover {
+            transform: scale(1.05);
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .gallery span {
+            display: block;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: transform 0.3s ease, color 0.3s ease;
+            color: #ff758c;
+        }
+        .back-button:hover {
+            transform: scale(1.2);
+            color: #ff4f70;
+        }
+    </style>
+</head>
+<body>
+    <button href="ESTMEBPAGE_42.html" class="back-button" onclick="history.back()">&#8592;</button>
+    <header id="life">
+      <div class="title">
+    <h1>STUDENT LIFE</h1>
+</div>
+    
+    <h3 class="lower">Lower Division</h3>
+    <h2 class="first">First Form</h2>
+    
+    <div class="content">
+        <div class="scroll-box">
+            <p>First-form students in secondary school are in their first year of high school, usually around ages 11–13. This is a transition period where they adjust to a new learning environment, build foundational knowledge in core subjects like Math, English, Science, and Social Studies, and develop important study and organizational skills. It's a time for exploration, making new friends, and laying the groundwork for future academic success.</p>
+            <h2>First Form General Subjects</h2>
+            <h4>Major Subjects</h4>
+            <p>* Mathematics</p>
+            <p>* English</p>
+            <h4>Minor Subjects</h4>
+            <p>* Science</p>
+            <p>* Music</p>
+            <p>* Life Skills</p>
+            <p>* Spanish</p>
+            <p>* Agriculture</p>
+            <p>* Physical Education</p>
+            <p>* Belizean Studies</p>
+        </div>
+        <div class="slideshow" id="slideshow1">
+            <div class="slideshow-container">
+                <img class="slide active" src="1.jpg" alt="Slide 1">
+                <img class="slide" src="2.jpg" alt="Slide 2">
+                <img class="slide" src="3.jpg" alt="Slide 3">
+            </div>
+        </div>
+    </div>
+
+    <h2>Second Form</h2>
+    <div class="content">
+        <div class="scroll-box">
+            <p>Second-form students in secondary school are typically in their second year of high school, around ages 12–14. At this stage, they build on the foundation from first form, studying core subjects like Math, English, Science, and Social Studies while developing critical thinking and problem-solving skills.</p>
+            <h2>Second Form General Subjects</h2>
+            <h4>Major Subjects</h4>
+            <p>* Mathematics</p>
+            <p>* English</p>
+            <p>* Science</p>
+            <h4>Minor Subjects</h4>
+            <p>* Belizean Studies</p>
+            <p>* Spanish</p>
+            <p>* Life Skills</p>
+            <p>* Physical Education</p>
+            <p>* Industrial Technology</p>
+            <p>* Technical Drawing</p>
+        </div>
+        <div class="slideshow" id="slideshow2">
+            <div class="slideshow-container">
+                <img class="slide active" src="2nd.jpg" alt="Slide 4">
+                <img class="slide" src="2nd2.jpg" alt="Slide 5">
+            </div>
+        </div>
+    </div>
+
+    <h1>Third Form and Fourth Form</h1>
+    
+    <div class="gallery">
+        <div class="item">
+            <a href="page1.html">
+                <img src="business.jpg" alt="Business">
+                <span>Business</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="page2.html">
+                <img src="tour.jpeg" alt="Tourism">
+                <span>Tourism</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="page3.html">
+                <img src="scinm.webp" alt="Science">
+                <span>Science</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="page4.html">
+                <img src="vot-1.jpg" alt="Votec-1">
+                <span>Votec-1</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="page5.html">
+                <img src="vot-2.jpg" alt="Votec-2">
+                <span>Votec-2</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="page6.html">
+                <img src="agrc.jpg" alt="Agriculture">
+                <span>Votec-3</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function startSlideshow(slideshowid) {
+            let slides = document.querySelectorAll(`#${slideshowid}.slid`);
+            let index = 0;
+            function showSlide() {
+                slides.forEach(slide => slide.classList.remove("active"));
+                slides[index].classList.add("active");
+                index = (index + 1) % slides.length;
+            }
+            setInterval(showSlide, 3000);
+        }
+        startSlideshow();
+    </script>
+    <footer style="background-color: #16612c; color: white; text-align: center; padding: 5px; margin-bottom: 0px;height: auto;width: 100%;justify-content: space-around;">
+        <h1>Escuela Secundaria Tecnica Mexico</h1>
+        <p><i>"Promoting knowledge skills and positive attitudes"</i></p>
+        <p>San roman village, Corozal District</p>
+        <p>Phone: (+501) +501 423-3140 | Email: estm83.edu.bz@gmail.com</p>
+        
+        <div style="margin-top: 10px;">
+            <a href="https://www.facebook.com/p/Escuela-Secundaria-T%C3%A9cnica-M%C3%A9xico-ESTM-100057288016719/" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook" width="30">
+            </a>
+            <a href="https://ols.estm.edu.bz/" target="_blank">
+                <img src="moodle-icon.png" alt="moodle" width="30">
+            </a>
+            <a href="http://abacus.estm.edu.bz/login/auth" target="_blank">
+                <img src="Abacus-icon.png" alt="Abacus" width="30">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>

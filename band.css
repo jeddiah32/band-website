@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+.logo {
+    position: fixed;
+    height: auto;
+    right: 10px;
+    width: 120px;
+}
+.heading {color: brown;font-size: 75px;}
+.bandbutton {font-size: 30px;background-color: burlywood;color: darkblue;border-radius: 7px;}
+.dancersbutton {font-size: 30px; background-color: burlywood;color: darkblue;border-radius: 7px}
+.footballbutton {font-size: 30px; background-color: burlywood;color: darkblue;border-radius: 7px}
+.softballbutton {font-size: 30px; background-color: burlywood;color: darkblue;border-radius: 7px}
+.vollyballbutton {font-size: 30px; background-color: burlywood;color: darkblue;border-radius: 7px}
+
+.head {
+     height: 100yh;
+     background: linear-gradient(
+        to right,
+        rgb(255, 16, 16) 0%,
+        rgb(52, 255, 52) 100%
+     );
+     display: flex;
+     justify-content: center;
+     
+}
+
+body {
+    height: 100yh;
+    background: linear-gradient(
+       to right,
+       rgb(255, 16, 16) 0%,
+       rgb(52, 255, 52) 100%
+    );
+    
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(
+        to right,
+        rgb(255, 16, 16) 0%,
+        rgb(52, 255, 52) 100%
+    );
+}
+
+
+.slideshow-container {
+    position: relative;
+    width: 900px;
+    height: 1050px;
+    overflow: hidden;
+}
+
+
+.slideshow {
+    display: flex;
+    width: 100%;
+    animation: slide-show 12s infinite;
+}
+
+.slide {
+    width: 100%;
+    flex: 1;
+}
+
+@keyframes slide-show {
+    0% { transform: translateX(0%); }
+    16.66% { transform: translateX(0%); }
+    20% { transform: translateX(-100%); }
+    36.66% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    56.66% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    76.66% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+    96.66% { transform: translateX(-400%); }
+    100% { transform: translateX(-500%); }
+}
+
+
+.text-box {
+    width: 500px; 
+    text-align: right;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #8b6f2f; 
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    line-height: 1.6;
+}
+.acheive {
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+   
+}
+.acheiveinfo {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+.arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #ff758c;
+}
+.arrow:hover {
+    transform: scale(1.2);
+    color: #ff4f70;
+}
+

@@ -1,0 +1,67 @@
+body {
+    background:linear-gradient(135deg, red, green, white),url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #ff758c;
+}
+.back-button:hover {
+    transform: scale(1.2);
+    color: #ff4f70;
+}
+
+.Missionstatement{color: rgb(26, 175, 46); 
+    background-color: rgb(243, 66, 66); 
+    padding: 5px 10px;
+    border-radius: 10px; 
+    display: inline-block; 
+    font-weight: bold; 
+    text-align: center;
+    margin: 0;
+}
+.map{
+    border-radius: 30px;
+
+}
+.Future{color: rgb(26, 175, 46); 
+    background-color: rgb(243, 66, 66); 
+    padding: 5px 10px;
+    border-radius: 10px; 
+    display: inline-block; 
+    font-weight: bold; 
+    text-align: center;
+    margin: 0;
+}
+.History {
+    color: rgb(26, 175, 46); 
+    background-color: rgb(243, 66, 66); 
+    padding: 5px 10px;
+    border-radius: 10px; 
+    display: inline-block; 
+    font-weight: bold; 
+    text-align: center;
+    margin: 0;
+}
+footer{
+    background-color: #16612c; 
+    color: white; 
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 0px;
+    height: auto;
+    width: 100%;
+    justify-content: space-around;
+
+}
